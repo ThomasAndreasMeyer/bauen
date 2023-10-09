@@ -1,0 +1,177 @@
+body {
+    font-family: 'Arial', sans-serif; /* Wählen Sie eine passende Schriftart */
+    background-color: #f2f2f2; /* Hintergrundfarbe */
+    color: #333; /* Textfarbe */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Zeilenhöhe für bessere Lesbarkeit */
+}
+
+/* Fügen Sie Schatten hinzu, um das Hauptinhaltselement hervorzuheben */
+.container1 {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+/* Links stilisieren */
+a {
+    color: #007bff; /* Linkfarbe */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Animieren Sie die Linkfarbe */
+}
+
+a:hover {
+    color: #0056b3; /* Linkfarbe im Hover-Zustand */
+}
+
+/* Überschriften stilisieren */
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif; /* Wählen Sie eine moderne Schriftart für Überschriften */
+    color: #333;
+}
+
+/* Hervorhebungen hinzufügen */
+.highlight {
+    background-color: #ffe600; /* Gelbe Hervorhebungsfarbe */
+    color: #333;
+    padding: 5px;
+}
+
+/* Fügen Sie eine sanfte Schattenanimation hinzu */
+@keyframes shadow-pulse {
+    0% {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.container:hover {
+    animation: shadow-pulse 1s infinite; /* Fügen Sie die Schattenanimation hinzu */
+}
+
+/* CSS */
+.hero,
+.navbar-custom {
+    background-image: url('images/hero_image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+    padding: 200px 0;
+    position: relative;
+}
+
+.hero::before,
+.navbar-custom::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Transparenz */
+}
+
+
+/* Weitere Stile und Animationen für Text, Schaltflächen und Elemente hinzufügen */
+/* Beispiel: */
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Textschatten */
+    transition: font-size 0.3s ease, text-shadow 0.3s ease;
+}
+
+.hero h1:hover {
+    font-size: 52px;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* Bildergalerie*/
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+}
+
+.gallery-item {
+    flex: 0 0 calc(33.33% - 20px);
+    margin-bottom: 20px;
+}
+
+
+/*Bild mit Content*/
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.image-segment {
+    position: relative;
+    height: 800px;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+}
+
+.image-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Hintergrundfarbe mit Transparenz */
+    padding: 20px;
+}
+
+.content h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
