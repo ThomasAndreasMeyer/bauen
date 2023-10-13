@@ -439,3 +439,18 @@ body {
 .tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
   background: var(--primary);
 }
+
+/* AVIF generator*/
+/* Simple approach */
+.fallback .img { background-image: url('avif-in-css.jpg') }
+.webp .img { background-image: url('avif-in-css.webp') }
+.avif .img { background-image: url('avif-in-css.avif') }
+/* Add Support for high Pixel Ratio Devices (Retina) */
+@media
+  screen and (min-resolution: 2dppx),
+  screen and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi) {
+  .fallback img { background-image: url('avif-in-css@2x.jpg') }
+  .webp .img { background-image: url('avif-in-css@2x.webp') }
+  .avif .img { background-image: url('avif-in-css@2x.avif') }
+}
