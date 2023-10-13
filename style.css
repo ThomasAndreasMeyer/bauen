@@ -60,7 +60,7 @@ h1, h2, h3 {
 /* CSS */
 .hero,
 .navbar-custom {
-  background-image: url('images/hero_image.jpg');
+  background-image: url('images/hero_image.avif');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
