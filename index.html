@@ -6,282 +6,419 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Bauen Sie jetzt mit Bauen.de und lassen Sie iÍhren persöhnlichen Wohntraum wahr werden.">
     <title>Ihr Spezialist für Sanierung in Essen</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <!-- Bootstrap CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
-<body>
-<header>
-  <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-custom">
-    <div class="container">
-        <div class="row w-100">
-            <div class="col-4 d-flex align-items-center justify-content-start">
-                <!-- Elemente links -->
-                <img src="images/Bauen Logo groß.jpg" class="img-fluid" alt="Bauen.de Logo">
-            </div>
-            <div class="col-4 d-flex align-items-center justify-content-center">
-                <p class="text-dark lead h5">Seit über 15 Jahren für Sie da</p>
-            </div>
-            <div class="col-4 d-flex align-items-center justify-content-end">
-                <!-- Elemente am Ende -->
-                <a class="nav-link" href="mailto:saghallo@bauen.de">
-                    <button class="btn btn-primary">E-Mail senden</button>
-                </a>
-            </div>
-        </div>
-    </div>
-</nav>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-        <div class="row w-100">
-            <div class="col">
-                <a class="navbar-brand" href="index.html">Bauen.de</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
 
-            <div class="col">
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <!-- Hier beginnt das Dropdown-Menü "Unternehmen" -->
-                    <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Unternehmen
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
-                                <a class="dropdown-item" href="ueber_uns.html">Über uns</a>
-                                <a class="dropdown-item" href="referenzen.html">Referenzen</a>
-                                <a class="dropdown-item" href="partner.html">Partner</a>
-                                <a class="dropdown-item" href="karriere.html">Karriere</a>
-                            </div>
-                        </li>
-                    </ul>
-                    <!-- Ende des Dropdown-Menüs "Unternehmen" -->
-                </div>
-            </div>
+  <body>
 
-            <div class="col">
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <!-- Hier beginnt das Dropdown-Menü "Leistungen" -->
-                    <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Leistungen
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
-                                <a class="dropdown-item" href="sanierung.html">Sanierung</a>
-                                <a class="dropdown-item" href="schlüsselfertiges_bauen.html">Schlüsselfertiges Bauen</a>
-                                <a class="dropdown-item" href="trockenbau.html">Trockenbau</a>
-                                <a class="dropdown-item" href="malerarbeiten.html">Malerarbeiten</a>
-                                <a class="dropdown-item" href="badgestaltung.html">Badgestaltung</a>
-                                <a class="dropdown-item" href="dachgeschossausbau.html">Dachgeschossausbau</a>
-                            </div>
-                        </li>
-                    </ul>
-                    <!-- Ende des Dropdown-Menüs "Leistungen" -->
-                </div>
-            </div>
+    <header>
+        <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg navbar-custom">
+          <div class="container">
+              <div class="row w-100">
+                  <div class="col-4 d-flex align-items-center justify-content-start">
+                      <!-- Elemente links -->
+                      <img src="images/Bauen Logo groß.jpg" class="img-fluid" alt="Bauen.de Logo">
+                  </div>
+                  <div class="col-4 d-flex align-items-center justify-content-center">
+                      <p class="text-dark lead h5">Seit über 15 Jahren für Sie da</p>
+                  </div>
+                  <div class="col-4 d-flex align-items-center justify-content-end">
+                      <!-- Elemente am Ende
+                      <a class="nav-link" href="mailto:saghallo@bauen.de">
+                          <button class="btn btn-primary">E-Mail senden</button>
+                      </a>
+                                   -->
+                  </div>
+              </div>
+          </div>
+      </nav>
+      
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container">
+              <div class="row w-100">
+                  <div class="col-3">
+                      <a class="navbar-brand" href="index.html">Bauen.de</a>
+                  </div>
+                  
+                  <div class="col text-end">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                      </button>
+                  </div>
+      
+                  <!-- Hier beginnt das Dropdown-Menü "Unternehmen" -->
+                  <div class="col">
+                      <ul class="navbar-nav">
+                          <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Unternehmen
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                                  <a class="dropdown-item" href="ueber_uns.html">Über uns</a>
+                                  <a class="dropdown-item" href="referenzen.html">Referenzen</a>
+                                  <a class="dropdown-item" href="partner.html">Partner</a>
+                                  <a class="dropdown-item" href="karriere.html">Karriere</a>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+                  <!-- Ende des Dropdown-Menüs "Unternehmen" -->
+      
+                  <!-- Hier beginnt das Dropdown-Menü "Leistungen" -->
+                  <div class="col">
+                      <ul class="navbar-nav">
+                          <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role- button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Leistungen
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                                  <a class="dropdown-item" href="sanierung.html">Sanierung</a>
+                                  <a class="dropdown-item" href="schluesselfertiges_bauen.html">Schlüsselfertiges Bauen</a>
+                                  <a class="dropdown-item" href="trockenbau.html">Trockenbau</a>
+                                  <a class="dropdown-item" href="malerarbeiten.html">Malerarbeiten</a>
+                                  <a class="dropdown-item" href="badgestaltung.html">Badgestaltung</a>
+                                  <a class="dropdown-item" href="dachgeschossausbau.html">Dachgeschossausbau</a>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+                  <!-- Ende des Dropdown-Menüs "Leistungen" -->
+      
+                  <!-- Rechter Bereich der Navbar -->
+                  <div class="col text-end">
+                      <ul class="navbar-nav">
+                          <li class="nav-item">
+                              <a class="nav-link" href="#">Über uns</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#">Referenzen</a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="tel:123-456-7890" class="cta-button">Rufen Sie uns an</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </nav>
+      
+      
+      <!-- Hero Segment -->
+      <div class="hero mb-5">
+          <div class="hero-content">
+              <h1>Ihre Baufirma für Qualität und Innovation</h1>
+              <p>Wir verwirklichen Ihre Bauprojekte mit Leidenschaft</p>
+            <!-- <a href="#contact" class="cta-button">Kontaktieren Sie uns</a> --> 
+          </div>
+      </div>
+      </header>
+      <section id="services" class="py-5 mt-5 mb-5">
+          <div class="container container1">
+              <header class="text-center">
+                  <h2>Unsere Dienstleistungen</h2>
+              </header>
+              <div class="row">
+                  <article class="col-md-4">
+                      <div class="service-item">
+                          <i class="fas fa-home fa-3x"></i>
+                          <h3>Bau von Eigenheimen</h3>
+                          <p>Wir realisieren Ihren Traum vom Eigenheim mit hochwertiger Bauqualität.</p>
+                          <div class="gallery">
+                              <div class="gallery-item">
+                                  <a href="images/image1.jpg"><img src="images/image1.jpg" class="img-fluid" alt="Bild 1"></a>
+                              </div>
+                              <div class="gallery-item">
+                                  <a href="images/image2.jpg"><img src="images/image2.jpg" class="img-fluid" alt="Bild 2"></a>
+                              </div>
+                              <div class="gallery-item">
+                                  <a href="images/image3.jpg"><img src="images/image3.jpg" class="img-fluid" alt="Bild 3"></a>
+                              </div>
+                          </div>
+                      </div>
+                  </article>
+                  <article class="col-md-4">
+                      <div class="service-item">
+                          <i class="fas fa-home fa-3x"></i>
+                          <h3>Renovierungen</h3>
+                          <p>Wir bringen frischen Wind in bestehende Gebäude und modernisieren nach Ihren Wünschen.</p>
+                          <div class="gallery">
+                              <div class="gallery-item">
+                                  <a href="images/image1.jpg"><img src="images/image1.jpg" class="img-fluid" alt="Bild 1"></a>
+                              </div>
+                              <div class="gallery-item">
+                                  <a href="images/image2.jpg"><img src="images/image2.jpg" class="img-fluid" alt="Bild 2"></a>
+                              </div>
+                              <div class="gallery-item">
+                                  <a href="images/image3.jpg"><img src="images/image3.jpg" class="img-fluid" alt="Bild 3"></a>
+                              </div>
+                          </div>
+                      </div>
+                  </article>
+                  <article class="col-md-4">
+                      <div class="service-item">
+                          <i class="fas fa-home fa-3x"></i>
+                          <h3>Gewerbliche Projekte</h3>
+                          <p>Unsere Expertise erstreckt sich auf die Planung und den Bau gewerblicher Immobilien.</p>
+                          <div class="gallery">
+                              <div class="gallery-item">
+                                  <a href="images/image1.jpg"><img src="images/image1.jpg" class="img-fluid" alt="Bild 1"></a>
+                              </div>
+                              <div class="gallery-item">
+                                  <a href="images/image2.jpg"><img src="images/image2.jpg" class="img-fluid" alt="Bild 2"></a>
+                              </div>
+                              <div class="gallery-item">
+                                  <a href="images/image3.jpg"><img src="images/image3.jpg" class="img-fluid" alt="Bild 3"></a>
+                              </div>
+                          </div>
+                      </div>
+                  </article>
+                      </div>
+          </div>
+      </section>
+      <section class=" container image-segment  mt-5 mb-5">
+          <div class="image-bg">
+              <img src="images/logo1.jpg" class="img-fluid" alt="Hintergrundbild">
+          </div>
+          <div class="content">
+              <h2>Vertrauen Sie auf termingerechte Spitzenqualität</h2>
+              <p>Wir schaffen Qualität und Innovation in jedem Projekt.</p>
+              <a href="#contact" class="cta-button">Kontaktieren Sie uns</a>
+          </div>
+      </section>
+         <div class="container">
+          <h2 class="h2 text-center">Entdecken Sie unsere abgeschlossenen Bauprojekte</h2>
+          <p>Unsere Projekte sind mehr als nur Gebäude. Sie sind das Ergebnis von Visionen, harter Arbeit und Liebe zum Detail. Wir haben Häuser errichtet, die zu echten Heimatorten wurden, Gewerbegebäude, die Unternehmen zum Erfolg führten, und Renovierungen, die Lebensräume in wahrhafte Schätze verwandelten.</p>
+          </div>
+          <section class="gallery">
+              <div class="gallery-item">
+                  <img src="images/image1.jpg" class="img-fluid" alt="Bild 1">
+              </div>
+              <div class="gallery-item">
+                  <img src="images/image2.jpg" class="img-fluid" alt="Bild 2">
+              </div>
+              <div class="gallery-item">
+                  <img src="images/image3.jpg" class="img-fluid" alt="Bild 3">
+              </div>
+              <div class="gallery-item">
+                  <img src="images/image4.jpg" class="img-fluid" alt="Bild 4">
+              </div>
+              <div class="gallery-item">
+                  <img src="images/image5.jpg" class="img-fluid" alt="Bild 5">
+              </div>
+              <div class="gallery-item">
+                  <img src="images/image6.jpg" class="img-fluid" alt="Bild 6">
+              </div>
+          </section>
+          <section>
+              <div class="container container1">
+                  <h1>Kontaktformular</h1>
+                  <form method="POST" action="/submit">
+                      <div class="form-group">
+                          <label for="name">Name <span class="text-danger">*</span></label>
+                          <input type="text" class="form-control" id="name" name="name" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="address">Anschrift <span class="text-danger">*</span></label>
+                          <input type="text" class="form-control" id="address" name="address" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="phone">Telefonnummer <span class="text-danger">*</span></label>
+                          <input type="tel" class="form-control" id="phone" name="phone" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="email">Email-Adresse</label>
+                          <input type="email" class="form-control" id="email" name="email">
+                      </div>
+                      <div class="form-group">
+                          <label for="message">Nachricht <span class="text-danger">*</span></label>
+                          <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                      </div>
+                      <div class="form-group mt-2 mb-2">
+                          <label>
+                              <input type="checkbox" name="privacy" required> Ich habe die <a class="link-dark" href="Datenschutzerklärung.html">Datenschutzerklärung</a> gelesen und stimme zu <span class="text-danger">*</span>
+                          </label>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Absenden</button>
+                  </form>
+              </div>
+          </section>
+          <section>
+              <div class="jumbotron text-center bg-light pt-5 pb-5">
+                  <div class="container">
+                  <h2 class="h2">Ihr Partner für hochwertige Bau- und Renovierungsprojekte.</h2>
+                  <p>
+                      Sie haben eine Vision, einen <strong>Traum von einem perfekten Zuhause, einem Ort, an dem Sie sich wohlfühlen und der Ihre Persönlichkeit widerspiegelt.</strong> Bei Bauen.de sind wir hier, um Ihnen bei der Verwirklichung dieses Traums zu helfen.
+                  </p>
+                  <p>
+                      Seit vielen Jahren sind wir Experten im Bereich Bau und Renovierung. Unser Team aus hochqualifizierten Fachleuten verfügt über das Wissen und die Erfahrung, um Ihre Ideen in die Tat umzusetzen und Ihr Zuhause in ein <strong class="text-primary">Meisterwerk</strong> zu verwandeln.
+                  </p>
+                  <p>
+                      Wir verstehen, dass jedes Projekt einzigartig ist, und wir arbeiten eng mit Ihnen zusammen, um sicherzustellen, dass Ihre individuellen Anforderungen und Vorlieben berücksichtigt werden. Unser Engagement für <strong class="text-primary">Qualität und Exzellenz</strong> zeigt sich in jedem Detail unserer Arbeit.
+                  </p>
+                  <p>
+                      Egal, ob Sie eine umfassende Sanierung, den Bau Ihres <strong>Traumhauses</strong> oder einfach nur kleine Renovierungsarbeiten planen, wir sind hier, um Ihnen zu dienen. Wir bieten eine breite Palette von Dienstleistungen, darunter Trockenbau, Malerarbeiten, Badgestaltung, Dachgeschossausbau und vieles mehr.
+                  </p>
+                  <p>
+                      Bei Bauen.de legen wir großen Wert auf <strong class="text-primary">Kundenzufriedenheit</strong>. Wir sind stolz darauf, mit Leidenschaft und Hingabe an jedem Projekt zu arbeiten und sicherzustellen, dass unsere Kunden vollständig zufrieden sind. Ihre Zufriedenheit ist unsere beste Belohnung.
+                  </p>
+                  <p>
+                      Lassen Sie uns gemeinsam Ihren Wohntraum verwirklichen. Kontaktieren Sie uns noch heute, um mehr über unsere Dienstleistungen und Projekte zu erfahren. Wir freuen uns darauf, Ihre Ideen zu hören und Ihnen dabei zu helfen, Ihr Zuhause in etwas Besonderes zu verwandeln.
+                  </p>            
+                  <p class="lead">Wir verwandeln Ihre Träume in beeindruckende Realität.</p>
+                  <a class="btn btn-primary btn-lg" href="#" role="button">Erfahren Sie mehr</a>
+                  </div>
+              </div>
+          </section>
+      
 
-            <!-- Rechter Bereich der Navbar -->
-            <div class="col">
-                <div class="ml-auto collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Über uns</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Referenzen</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Karriere</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</nav>
-
-<!-- Hero Segment -->
-<div class="hero mb-5">
-    <div class="hero-content">
-        <h1>Ihre Baufirma für Qualität und Innovation</h1>
-        <p>Wir verwirklichen Ihre Bauprojekte mit Leidenschaft</p>
-        <a href="#contact" class="cta-button">Kontaktieren Sie uns</a>
-    </div>
-</div>
-</header>
-<section id="services" class="py-5 mt-5 mb-5">
-    <div class="container container1">
-        <header class="text-center">
-            <h2>Unsere Dienstleistungen</h2>
-        </header>
-        <div class="row">
-            <article class="col-md-4">
-                <div class="service-item">
-                    <i class="fas fa-home fa-3x"></i>
-                    <h3>Bau von Eigenheimen</h3>
-                    <p>Wir realisieren Ihren Traum vom Eigenheim mit hochwertiger Bauqualität.</p>
-                    <div class="gallery">
-                        <div class="gallery-item">
-                            <a href="images/image1.jpg"><img src="images/image1.jpg" class="img-fluid" alt="Bild 1"></a>
-                        </div>
-                        <div class="gallery-item">
-                            <a href="images/image2.jpg"><img src="images/image2.jpg" class="img-fluid" alt="Bild 2"></a>
-                        </div>
-                        <div class="gallery-item">
-                            <a href="images/image3.jpg"><img src="images/image3.jpg" class="img-fluid" alt="Bild 3"></a>
-                        </div>
+    <section id="tranding">
+      <div class="container2 slide-container">
+        <h1 class="text-center section-heading">Referenzen</h1>
+      </div>
+      <div class="container2">
+        <div class="swiper tranding-slider">
+          <div class="swiper-wrapper">
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="images/image1.jpg" alt="Tranding">
+              </div>
+                 <!-- Content
+              <div class="tranding-slide-content">
+                <h1 class="food-price">$20</h1>
+                <div class="tranding-slide-content-bottom">
+                  <h2 class="food-name">
+                    Special Pizza
+                  </h2>
+                  <h3 class="food-rating">
+                    <span>4.5</span>
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
                     </div>
+                  </h3>
                 </div>
-            </article>
-            <article class="col-md-4">
-                <div class="service-item">
-                    <i class="fas fa-home fa-3x"></i>
-                    <h3>Renovierungen</h3>
-                    <p>Wir bringen frischen Wind in bestehende Gebäude und modernisieren nach Ihren Wünschen.</p>
-                    <div class="gallery">
-                        <div class="gallery-item">
-                            <a href="images/image1.jpg"><img src="images/image1.jpg" class="img-fluid" alt="Bild 1"></a>
-                        </div>
-                        <div class="gallery-item">
-                            <a href="images/image2.jpg"><img src="images/image2.jpg" class="img-fluid" alt="Bild 2"></a>
-                        </div>
-                        <div class="gallery-item">
-                            <a href="images/image3.jpg"><img src="images/image3.jpg" class="img-fluid" alt="Bild 3"></a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article class="col-md-4">
-                <div class="service-item">
-                    <i class="fas fa-home fa-3x"></i>
-                    <h3>Gewerbliche Projekte</h3>
-                    <p>Unsere Expertise erstreckt sich auf die Planung und den Bau gewerblicher Immobilien.</p>
-                    <div class="gallery">
-                        <div class="gallery-item">
-                            <a href="images/image1.jpg"><img src="images/image1.jpg" class="img-fluid" alt="Bild 1"></a>
-                        </div>
-                        <div class="gallery-item">
-                            <a href="images/image2.jpg"><img src="images/image2.jpg" class="img-fluid" alt="Bild 2"></a>
-                        </div>
-                        <div class="gallery-item">
-                            <a href="images/image3.jpg"><img src="images/image3.jpg" class="img-fluid" alt="Bild 3"></a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-                </div>
-    </div>
-</section>
-<section class="image-segment  mt-5 mb-5">
-    <div class="image-bg">
-        <img src="images/logo1.jpg" class="img-fluid" alt="Hintergrundbild">
-    </div>
-    <div class="content">
-        <h2>Vertrauen Sie auf termingerechte Spitzenqualität</h2>
-        <p>Wir schaffen Qualität und Innovation in jedem Projekt.</p>
-        <a href="#contact" class="cta-button">Kontaktieren Sie uns</a>
-    </div>
-</section>
-   <div class="container">
-    <h2 class="h2 text-center">Entdecken Sie unsere abgeschlossenen Bauprojekte</h2>
-    <p>Unsere Projekte sind mehr als nur Gebäude. Sie sind das Ergebnis von Visionen, harter Arbeit und Liebe zum Detail. Wir haben Häuser errichtet, die zu echten Heimatorten wurden, Gewerbegebäude, die Unternehmen zum Erfolg führten, und Renovierungen, die Lebensräume in wahrhafte Schätze verwandelten.</p>
-    </div>
-    <section class="gallery">
-        <div class="gallery-item">
-            <img src="images/image1.jpg" class="img-fluid" alt="Bild 1">
-        </div>
-        <div class="gallery-item">
-            <img src="images/image2.jpg" class="img-fluid" alt="Bild 2">
-        </div>
-        <div class="gallery-item">
-            <img src="images/image3.jpg" class="img-fluid" alt="Bild 3">
-        </div>
-        <div class="gallery-item">
-            <img src="images/image4.jpg" class="img-fluid" alt="Bild 4">
-        </div>
-        <div class="gallery-item">
-            <img src="images/image5.jpg" class="img-fluid" alt="Bild 5">
-        </div>
-        <div class="gallery-item">
-            <img src="images/image6.jpg" class="img-fluid" alt="Bild 6">
-        </div>
-    </section>
-    <section>
-        <div class="container container1">
-            <h1>Kontaktformular</h1>
-            <form method="POST" action="/submit">
-                <div class="form-group">
-                    <label for="name">Name <span class="text-danger">*</span></label>
-                    <input type="text" class="form-control" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="address">Anschrift <span class="text-danger">*</span></label>
-                    <input type="text" class="form-control" id="address" name="address" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone">Telefonnummer <span class="text-danger">*</span></label>
-                    <input type="tel" class="form-control" id="phone" name="phone" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email-Adresse</label>
-                    <input type="email" class="form-control" id="email" name="email">
-                </div>
-                <div class="form-group">
-                    <label for="message">Nachricht <span class="text-danger">*</span></label>
-                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-                </div>
-                <div class="form-group mt-2 mb-2">
-                    <label>
-                        <input type="checkbox" name="privacy" required> Ich habe die <a class="link-dark" href="Datenschutzerklärung.html">Datenschutzerklärung</a> gelesen und stimme zu <span class="text-danger">*</span>
-                    </label>
-                </div>
-                <button type="submit" class="btn btn-primary">Absenden</button>
-            </form>
-        </div>
-    </section>
-    <section>
-        <div class="jumbotron text-center bg-light mt-5 mb-5">
-            <div class="container">
-            <h2 class="h2">Ihr Partner für hochwertige Bau- und Renovierungsprojekte.</h2>
-            <p>
-                Sie haben eine Vision, einen <strong>Traum von einem perfekten Zuhause, einem Ort, an dem Sie sich wohlfühlen und der Ihre Persönlichkeit widerspiegelt.</strong> Bei Bauen.de sind wir hier, um Ihnen bei der Verwirklichung dieses Traums zu helfen.
-            </p>
-            <p>
-                Seit vielen Jahren sind wir Experten im Bereich Bau und Renovierung. Unser Team aus hochqualifizierten Fachleuten verfügt über das Wissen und die Erfahrung, um Ihre Ideen in die Tat umzusetzen und Ihr Zuhause in ein <strong class="text-primary">Meisterwerk</strong> zu verwandeln.
-            </p>
-            <p>
-                Wir verstehen, dass jedes Projekt einzigartig ist, und wir arbeiten eng mit Ihnen zusammen, um sicherzustellen, dass Ihre individuellen Anforderungen und Vorlieben berücksichtigt werden. Unser Engagement für <strong class="text-primary">Qualität und Exzellenz</strong> zeigt sich in jedem Detail unserer Arbeit.
-            </p>
-            <p>
-                Egal, ob Sie eine umfassende Sanierung, den Bau Ihres <strong>Traumhauses</strong> oder einfach nur kleine Renovierungsarbeiten planen, wir sind hier, um Ihnen zu dienen. Wir bieten eine breite Palette von Dienstleistungen, darunter Trockenbau, Malerarbeiten, Badgestaltung, Dachgeschossausbau und vieles mehr.
-            </p>
-            <p>
-                Bei Bauen.de legen wir großen Wert auf <strong class="text-primary">Kundenzufriedenheit</strong>. Wir sind stolz darauf, mit Leidenschaft und Hingabe an jedem Projekt zu arbeiten und sicherzustellen, dass unsere Kunden vollständig zufrieden sind. Ihre Zufriedenheit ist unsere beste Belohnung.
-            </p>
-            <p>
-                Lassen Sie uns gemeinsam Ihren Wohntraum verwirklichen. Kontaktieren Sie uns noch heute, um mehr über unsere Dienstleistungen und Projekte zu erfahren. Wir freuen uns darauf, Ihre Ideen zu hören und Ihnen dabei zu helfen, Ihr Zuhause in etwas Besonderes zu verwandeln.
-            </p>            
-            <p class="lead">Wir verwandeln Ihre Träume in beeindruckende Realität.</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Erfahren Sie mehr</a>
+              </div> -->
             </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="images/image2.jpg" alt="Tranding">
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="images/image3.jpg" alt="Tranding">
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="images/image4.jpg" alt="Tranding">
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="images/image5.jpg" alt="Tranding">
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="images/image6.jpg" alt="Tranding">
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="images/image3.jpg" alt="Tranding">
+              </div>
+            </div>
+            <!-- Slide-end -->
+          </div>
+
+          <div class="tranding-slider-control">
+            <div class="swiper-button-prev slider-arrow">
+              <ion-icon name="arrow-back-outline"></ion-icon>
+            </div>
+            <div class="swiper-button-next slider-arrow">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
         </div>
+      </div>
     </section>
+
+    <section id="reviews" class="py-5">
+        <div class="container">
+          <h2 class="text-center">Kundenbewertungen</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4">
+                <img src="images/image4.jpg" class="card-img-top" alt="Kundenbild">
+                <div class="card-body">
+                  <h5 class="card-title">Max Mustermann</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor dui at ligula hendrerit, vel elementum turpis consectetur.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4">
+                <img src="images/image5.jpg" class="card-img-top" alt="Kundenbild">
+                <div class="card-body">
+                  <h5 class="card-title">Erika Musterfrau</h5>
+                  <p class="card-text">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed feugiat bibendum fringilla.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4">
+                <img src="images/image6.jpg" class="card-img-top" alt="Kundenbild">
+                <div class="card-body">
+                  <h5 class="card-title">Hans Beispielmann</h5>
+                  <p class="card-text">Suspendisse potenti. Vivamus a risus vel justo fermentum dictum. Integer in dictum erat. Duis vitae hendrerit leo.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
     <footer class="bg-dark text-light py-4 mt-5">
         <div class="container">
+            <h3 class="h3">Kontaktinformationen</h3>
             <div class="row">
-                <div class="col-md-6">
-                    <h4>Kontaktinformationen</h4>
+                <div class="col-md-4">
                     <ul class="list-unstyled">
-                        <li><i class="fas fa-map-marker-alt"></i> 123 Musterstraße, Musterstadt</li>
+                        <li><img src="images/Bauen Logo groß.jpg" alt=""></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Teststr. 123</li>
                         <li><i class="fas fa-phone"></i> Telefon: (123) 456-7890</li>
                         <li><i class="fas fa-envelope"></i> E-Mail: info@baufirma.de</li>
                     </ul>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <h4>Folgen Sie uns</h4>
                     <ul class="list-unstyled list-inline">
                         <li class="list-inline-item">
@@ -312,7 +449,10 @@
             <p class="text-center text-white">2023 &copy;Bauen.de &nbsp;•&nbsp; Alle Rechte vorbehalten</p>
             </div>
     </footer>
-    
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
     <!-- Bootstrap JavaScript (Popper.js und Bootstrap JS) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
